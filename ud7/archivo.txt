@@ -1,0 +1,3 @@
+
+Este es un nuevo texto añadido desde Java.
+ Texto añadido desde Java (2)
