@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-public class main10 {
+public class Serializar {
 
 	public static void main(String[] args) throws IOException {
 		Persona persona1 = new Persona ("Tommy", "Vercetti", 35, 1.72);
@@ -17,6 +17,7 @@ public class main10 {
 		FileOutputStream fos = new FileOutputStream (file);
 //		Flujo objeto
 		ObjectOutputStream oos = new ObjectOutputStream (fos);
+		oos.writeObject(persona1);
 //		Cerramos flujo
 		oos.close();
 		fos.close();
